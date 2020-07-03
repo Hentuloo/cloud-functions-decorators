@@ -16,19 +16,10 @@ export const bindFireFunction = ({
 }: BindFireFunctionType) => {
   return region(choosedRegion).https[type](
     async (data: any, context: CallableContext | Response<any>) => {
-      try {
-        for await (const fn of middlewares) {
-          await fn(data, context);
-        }
-        return controller[method](data, context);
-      } catch ({ code, message, details, name }) {
-        console.error(JSON.stringify({ code, message, details, name }));
-        throw new https.HttpsError("unknown", code, {
-          message,
-          details,
-          name,
-        });
+      for await (const fn of middlewares) {
+        await fn(data, context);
       }
+      return controller[method](data, context);
     }
   );
 };

@@ -15,18 +15,9 @@ export const bindAuthListener = ({
   method,
 }: AuthListenerProps) => {
   return auth.user()[type](async (userRecord, context) => {
-    try {
-      for await (const fn of middlewares) {
-        await fn(userRecord, context);
-      }
-      return controller[method](userRecord, context);
-    } catch ({ code, message, details, name }) {
-      console.error(JSON.stringify({ code, message, details, name }));
-      throw new https.HttpsError("unknown", code, {
-        message,
-        details,
-        name,
-      });
+    for await (const fn of middlewares) {
+      await fn(userRecord, context);
     }
+    return controller[method](userRecord, context);
   });
 };

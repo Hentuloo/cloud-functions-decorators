@@ -17,18 +17,9 @@ export const bindDatabaseListener = ({
   let db = dbType === "firestore" ? firestore.document : database.ref;
 
   return db(ref)[listenerType](async (data: any, context: any) => {
-    try {
-      for await (const fn of middlewares) {
-        await fn(data, context);
-      }
-      return controller[method](data, context);
-    } catch ({ code, message, details, name }) {
-      console.error(JSON.stringify({ code, message, details, name }));
-      throw new https.HttpsError("unknown", code, {
-        message,
-        details,
-        name,
-      });
+    for await (const fn of middlewares) {
+      await fn(data, context);
     }
+    return controller[method](data, context);
   });
 };
