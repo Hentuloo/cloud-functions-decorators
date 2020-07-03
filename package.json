@@ -1,0 +1,30 @@
+{
+  "name": "firestore-decorators",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hentuloo/firestore-decorators.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hentuloo/firestore-decorators/issues"
+  },
+  "homepage": "https://github.com/Hentuloo/firestore-decorators#readme",
+  "dependencies": {
+    "firebase-admin": "^8.13.0",
+    "firebase-functions": "^3.7.0",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^3.9.6"
+  }
+}
