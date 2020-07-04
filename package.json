@@ -2,13 +2,15 @@
   "name": "firestore-decorators",
   "version": "0.4.0",
   "description": "",
-  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.modern.module.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "microbundle --target node"
   },
   "repository": {
     "type": "git",
@@ -24,8 +26,10 @@
   "dependencies": {
     "firebase-admin": "^8.13.0",
     "firebase-functions": "^3.7.0",
-    "np": "^6.2.5",
     "reflect-metadata": "^0.1.13",
     "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "microbundle": "^0.12.2"
   }
 }
