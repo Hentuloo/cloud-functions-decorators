@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import { ListenAuthTypes, MetadataT } from "../../types/types";
 
 export type ListenAuthOptions = {

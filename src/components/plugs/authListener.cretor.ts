@@ -1,4 +1,4 @@
-import { https, auth } from "firebase-functions";
+import { auth } from "firebase-functions";
 import { ListenAuthTypes } from "../../types/types";
 
 interface AuthListenerProps {

@@ -1,5 +1,4 @@
 import { MetadataT } from "../../types/types";
-import "reflect-metadata";
 
 /**
  * Decorator

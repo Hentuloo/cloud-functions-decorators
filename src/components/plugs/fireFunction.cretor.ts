@@ -1,4 +1,4 @@
-import { region, https, Response } from "firebase-functions";
+import { region, Response } from "firebase-functions";
 import { FireFunctionOptions } from "./fireFunction.decorator";
 import { CallableContext } from "firebase-functions/lib/providers/https";
 interface BindFireFunctionType extends FireFunctionOptions {
