@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "esnext.asynciterable",
+      "es2015.promise",
+      "es2015.core",
+      "es5",
+      "esnext.array"
+    ],
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "outDir": "build",
+    "sourceMap": true,
+    "target": "es6",
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  },
+  "files": ["node_modules/typescript/lib/lib.es6.d.ts"],
+  "exclude": ["build//*", "node_modules", "tmp"]
+}
