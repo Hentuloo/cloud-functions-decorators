@@ -1,6 +1,6 @@
 {
   "name": "cloud-functions-decorators",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "",
   "source": "src/index.ts",
   "main": "dist/index.js",
