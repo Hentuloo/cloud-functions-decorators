@@ -1,4 +1,4 @@
-# firestore-decorators
+# cloud-functions-decorators
 
 > Typescript decorators for cloud functions / firebase functions
 

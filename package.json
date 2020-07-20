@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hentuloo/firestore-decorators.git"
+    "url": "git+https://github.com/Hentuloo/cloud-functions-decorators.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hentuloo/firestore-decorators/issues"
+    "url": "https://github.com/Hentuloo/cloud-functions-decorators/issues"
   },
-  "homepage": "https://github.com/Hentuloo/firestore-decorators#readme",
+  "homepage": "https://github.com/Hentuloo/cloud-functions-decorators#readme",
   "dependencies": {
     "firebase-admin": "^8.13.0",
     "firebase-functions": "^3.7.0",
