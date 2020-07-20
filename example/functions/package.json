@@ -19,7 +19,7 @@
     "concurrently": "^5.2.0",
     "firebase-admin": "^8.6.0",
     "firebase-functions": "^3.3.0",
-    "firestore-decorators": "^0.4.2",
+    "cloud-functions-decorators": "^0.5.3",
     "reflect-metadata": "^0.1.13",
     "validatorjs": "^3.18.1"
   },

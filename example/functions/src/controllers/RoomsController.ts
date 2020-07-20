@@ -2,7 +2,7 @@ import { firestore } from "firebase-admin";
 import { useAuth } from "../middlewares/useAuth";
 import { useValidator } from "../middlewares/useValidator";
 import { useUserProfile, WithUserProfile } from "../middlewares/useUserProfile";
-import { use, fireFunction } from "firestore-decorators";
+import { use, fireFunction } from "cloud-functions-decorators";
 
 interface CreateRoomData extends WithUserProfile {
   title: string;

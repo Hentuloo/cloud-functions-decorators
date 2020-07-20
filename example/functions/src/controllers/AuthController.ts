@@ -1,4 +1,4 @@
-import { listenAuth } from "firestore-decorators";
+import { listenAuth } from "cloud-functions-decorators";
 
 export class AuthController {
   @listenAuth({ type: "onCreate" })

@@ -16,7 +16,7 @@ Here an example to create a controller:
 
 ```
 import { firestore } from "firebase-admin";
-import { fireFunction } from "firestore-decorators";
+import { fireFunction } from "cloud-functions-decorators";
 
 export class MyController  {
   @fireFunction({ region: "europe-west1", type: "onCall" })
@@ -35,7 +35,7 @@ To bind this controller in your _/src/index.ts_ use it like:
 ```
 import * as functions from "firebase-functions";
 import { initializeApp } from "firebase-admin";
-import { bindFireControllers } from "firestore-decorators";
+import { bindFireControllers } from "cloud-functions-decorators";
 
 import { MyController } from "./controllers/MyController";
 

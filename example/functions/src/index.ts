@@ -1,6 +1,6 @@
 import * as functions from "firebase-functions";
 import { initializeApp } from "firebase-admin";
-import { bindFireControllers } from "firestore-decorators";
+import { bindFireControllers } from "cloud-functions-decorators";
 
 import { RoomsController } from "./controllers/RoomsController";
 import { AuthController } from "./controllers/AuthController";
